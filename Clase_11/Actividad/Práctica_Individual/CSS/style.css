@@ -1,0 +1,40 @@
+/* Configuración General para setear la página */
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;}
+    /* Header */
+    .header {background-attachment: fixed; 
+    position: absolute;
+    width: 1024px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex; 
+    justify-content: space-between;}
+    
+    .barraNav {position: absolute;
+        width: 44px;
+        height: 19px;
+        left: 720px;
+        top: 40px;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-color: #F3F3F3;}
+    
+    /* Contenido de la página */
+    h2 {height: 28px;
+        width: 350.640380859375px;
+        left: 38.9794921875px;
+        top: 155px;
+        border-radius: nullpx;
+        text-decoration-color: #FC200C;
+        font-family: 'Roboto', sans-serif;
+        }
+    
+    /* Footer */

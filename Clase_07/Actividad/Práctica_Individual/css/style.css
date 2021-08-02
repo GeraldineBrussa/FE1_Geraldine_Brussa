@@ -1,0 +1,35 @@
+/* Header - CV y foto */
+.foto-cv {background-image: url('../img/logo-batman.png'); 
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color:#E5E5E5;
+height: 189px;
+width: 100%;}
+#CV {background-color:#C4C4C4; 
+background-position: bottom;
+height: 60px;
+width: 100%;
+text-align: center;
+color:#005677;
+font-weight: 700px;
+}
+/* Cuerpo - Datos Personales - Académicos - Laborales */
+h2 {background-color: #C4C4C4;
+height: 30px;
+width: 100%;
+color:#005677;
+font-size: 20px;
+font-weight: 700px;}
+.caja ul {list-style: none;}
+
+/* Footer - números y redes */
+.footer h3 {background-color: #005677;
+background-image: url('../img/ico_linkedin_insta.png');
+background-repeat: no-repeat;
+background-position: 750px;
+height: 37px;
+width: 100%;
+text-align:center;
+color:#FFFFFF;
+position: relative;
+}

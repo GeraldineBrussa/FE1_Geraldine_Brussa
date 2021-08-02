@@ -1,0 +1,119 @@
+/* Barra Superior */
+.barraSuperior {background-color: #222222;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    line-height: 11.72px;
+    font-weight: 400;
+    font-style: normal;
+    }
+.barraSuperior ul {list-style: none;}
+/* Barra de menú principal */
+.menuPrincipal {background-color: #F0A83E;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.23px;
+    font-style: normal;
+    }
+.menuPrincipal ul {list-style: none;}
+.menuPrincipal #fas fa-paw {color: #FFFFFF;}
+/* Contenido para el área Principal */
+/* Sección Banner */
+.banner {background-image: url(../img/Fondo1.png);
+height: 609px;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;}
+.banner h2 {
+    background-color: #FFFFFF;
+    height: 54px;
+    color:#3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.16px;
+    font-style: normal;}
+    .banner h4 {
+        height: 54px;
+        color: #3C2313;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        font-style: normal;}
+    .banner p span {
+        background-color: #F0A83E;
+        background-size: 141px 49px;
+        height: 49px;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        font-style: normal;
+        text-transform: uppercase;}
+/* Sección Productos */
+.productosDestacados {background-image: url('../img/patita1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 81px 70px;
+        }
+.productosDestacados h1 {
+    color:#3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.88px;
+    font-style: normal;}
+.productosDestacados ul {list-style: none;
+color: #666666;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 17.58px;
+font-style: normal;}
+/* Productos */
+.producto h4 {color:#3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.58px;
+    font-style: normal;}
+.producto span {color:#F0A83E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.58px;
+    font-style: normal;}
+/* Contenido para el pie de página */
+/* Barra de footer */
+.barraFooter{background-color: #3C2313;
+    background-image: url(../img/Logo-footer.png);
+    background-repeat: no-repeat;
+    background-position: right;}
+.barraFooter ul {
+    list-style: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    font-style: normal;}
+    .barraFooterSub {color:#8A8787;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 11.72px;
+    font-style: normal;}
+/* Derechos Reservados */
+h6 {background-color: #222222;
+color: #F3F3F3;
+font-family: 'Roboto', sans-serif;
+font-size: 10px;
+font-weight: 700;
+line-height: 11.72px;
+font-style: normal;
+text-align: center;}
