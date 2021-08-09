@@ -19,24 +19,121 @@ h1 {padding: 1rem;
     color: #ffffff;}
 /* Cards de Súper Héroes */
 section {display: flex; 
-flex-flow: column wrap;
-justify-content: space-between;
-align-items: center;}
-/* Card General */
-.caja {
-    width: 60vw;
-    height: 35rem;
-    border: none;
-    padding: 0;
-    margin: 1rem;
-    background-color: #F3F3F3;
-    border-radius: 16px 16px 0px 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-flow: wrap column;
-    align-items: center;
+    flex-flow: column wrap;
     justify-content: space-between;
-    position: relative;}
+    align-items: center;}
+    /* Card General */
+    .caja {
+        width: 60vw;
+        height: 35rem;
+        border: none;
+        padding: 0;
+        margin: 1rem;
+        background-color: #F3F3F3;
+        border-radius: 16px 16px 0px 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;}
+    /* Card Individual */
+.uno {
+    background-image: url(../img/fondo_tarjeta1.png);
+    background-repeat: no-repeat;
+    background-size: contain;}
+.dos {background-image: url(../img/Fondo_Mujer_Maravilla.png);
+    background-repeat: no-repeat;
+    background-size: contain;}
+
+.tres {background-image: url(../img/Fondo_Superman.png);
+        background-repeat: no-repeat;
+        background-size: contain;}
+
+.cuatro {background-image: url(../img/fondo_tarjeta2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: none;}
+/* Contenido de la Card */
+.imagen-top {height: 15%;
+    width: 45%;
+    border-radius: 50%;
+    position: absolute;
+    top: 4.5rem;}
+    .uno .imagen-top {font-weight: bolder;}
+    #corazon {position: absolute;
+    top:1rem;
+    left: 1rem;
+    color: #CC2424;}
+    .caja h2 {margin: 4rem;
+    position: absolute;
+    top: 6rem;}
+    .caja p {font-style: normal;
+        font-weight: normal;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        color: #333333;
+        padding: 2rem;
+        margin-top:4rem;
+        position:absolute;
+        top:8rem;}
+    .caja button {width: 5rem;
+        height: 2.5rem;
+        background: #00669F;
+        border-radius: 5%;
+        position: absolute;
+        bottom: 1rem;}
+    /* Boton + */
+    #more {position:fixed;
+        background-image: url(../img/boton+.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    height: 6%;
+    width: 10%;
+    top: 30rem;
+    right: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;}
+    /* Footer - Derechos Reservados */
+    footer {
+        padding: 0.5rem;
+        background-color: #00669F;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;}
+    footer p {font-size: 0.8rem; text-align: center;}
+    footer img {height: 2rem;
+    width: 7rem;}
+@media (min-width:768px) {
+    /* Tablet */
+/* Header */
+/* Cards de Súper Héroes */
+section {width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;}
+    /* Card General */
+    .caja {
+        width: 18.75rem;
+        height: 34rem;
+        border: none;
+        padding: 0;
+        margin: 1rem;
+        background-color: #F3F3F3;
+        border-radius: 16px 16px 0px 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;}
 /* Card Individual */
 .uno {
     background-image: url(../img/fondo_tarjeta1.png);
@@ -55,57 +152,59 @@ align-items: center;}
                 background-size: contain;}
 /* Contenido de la Card */
 .imagen-top {height: 15%;
-width: 45%;
-border-radius: 50%;
-position: absolute;
-top: 4.5rem;}
-.uno .imagen-top {font-weight: bolder;}
-#corazon {position: absolute;
-top:1rem;
-left: 1rem;
-color: #CC2424;}
-.caja h2 {margin: 4rem;
-position: absolute;
-top: 6rem;}
-.caja p {font-style: normal;
-    font-weight: normal;
-    font-size: 0.9rem;
-    line-height: 1rem;
-    color: #333333;
-    padding: 2rem;
-    margin-top:4rem;
-    position:absolute;
-    top:8rem;}
-.caja button {width: 5rem;
-    height: 2.5rem;
-    background: #00669F;
-    border-radius: 5%;
+    width: 45%;
+    border-radius: 50%;
     position: absolute;
-    bottom: 1rem;}
-/* Boton + */
-#more {position:fixed;
+    top: 4.5rem;}
+    .uno .imagen-top {font-weight: bolder;}
+    #corazon {position: absolute;
+    top:1rem;
+    left: 1rem;
+    color: #CC2424;}
+    .caja h2 {margin: 4rem;
+    position: absolute;
+    top: 6rem;}
+    .caja p {font-style: normal;
+        font-weight: normal;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        color: #333333;
+        padding: 2rem;
+        margin-top:4rem;
+        position:absolute;
+        top:8rem;}
+    .caja button {width: 5rem;
+        height: 2.5rem;
+        background: #00669F;
+        border-radius: 5%;
+        position: absolute;
+        bottom: 1rem;}
+    /* Boton + */
+    #more {position:fixed;
     background-image: url(../img/boton+.png);
     background-repeat: no-repeat;
     background-size: contain;
-height: 7%;
-width: 10%;
-top: 30rem;
-right: 1rem;
-color: #ffffff;
-font-size: 2rem;
-text-align: center;}
-/* Footer - Derechos Reservados */
-footer {
-    padding: 0.5rem;
-    background-color: #00669F;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;}
-footer p {font-size: 0.8rem; text-align: center;}
-footer img {height: 2rem;
-width: 7rem;}
+    height: 6%;
+    width: 10%;
+    top: 30rem;
+    right: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;}
+    /* Footer - Derechos Reservados */
+    footer {
+        padding: 0.5rem;
+        background-color: #00669F;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;}
+    footer p {font-size: 0.8rem; text-align: center;}
+    footer img {height: 2rem;
+    width: 7rem;}
 
+}
