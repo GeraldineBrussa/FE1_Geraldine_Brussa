@@ -142,6 +142,7 @@ margin-top: 4rem;}
     text-align: center;
     padding: 0 0 0 7rem;}
 /* Formulario de Contacto */
+fieldset {border: none;}
 .contactanos {display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,20 +225,28 @@ input:valid {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;}
-.barraFooter ul {
-    list-style: none;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 23.44px;
-    font-style: normal;
-    padding: 0.5rem;}
+    .barraFooter section {display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23.44px;
+        font-style: normal;}
+        .footerIconos{display: flex;    
+            flex-direction: row;
+            justify-content: flex-start;
+            margin:1rem;}
+            .menu-footer{display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 0.5rem;}
     .barraFooterSub {color:#8A8787;
-    font-size: 0.7rem;
-    font-weight: 700;
-    line-height: 11.72px;
-    font-style: normal;
-    text-align: center;}
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 11.72px;
+        font-style: normal;}    
 /* Derechos Reservados */
 h6 {background-color: #222222;
 color: #F3F3F3;
@@ -273,10 +282,16 @@ header .barraSuperior {background-color: #201b1b;
     flex-flow: row;
     }
 
-header .barraSuperior ul {list-style:none;
-    width: 20rem;
+header .barraSuperior section {
     display: flex; flex-direction: row;}
-header .barraSuperior ul li {width: 8rem; margin: 4px 0;}
+    .barraSuperior section select {background-color: #201b1b;
+        color:#F3F3F3;
+        border: 0;
+        font-size: 10px;
+        line-height: 11.72px;
+        font-weight: 400;
+        font-style: normal;}
+
 /* Utilizando Pseudo Elemento */
 .barraSuperior ul li::after {content: url(../img/vector-barraS.png);}
 header img {display: none;}
@@ -432,6 +447,7 @@ margin-top: 4rem;}
     text-align: center;
     padding: 0 0 0 7rem;}
 /* Formulario de Contacto */
+fieldset {border: none;}
 .contactanos {display: flex;
     flex-direction: column;
     justify-content: center;
@@ -462,6 +478,11 @@ margin-top: 4rem;}
             color:#F3F3F3}
         .contactanos .reset {background: #8A8787;}
         .contactanos .enviar {background: #F0A83E;}
+/* Formulario de Contacto - Pseudo-clase*/
+    .contactanos input:focus {background-color: #F0A83E;
+        color:black;
+        font-weight: 700;
+        font-size: 16px;}
 /* Formulario Newsletter */
 .newsletter {background: #F0A83E;
     height: 34px;
@@ -504,14 +525,24 @@ margin-top: 4rem;}
     flex-direction: row-reverse;
     justify-content: space-between;
     }
-.barraFooter ul {
-    list-style: none;
+.barraFooter section {display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
     line-height: 23.44px;
     font-style: normal;}
-    .barraFooterSub {color:#8A8787;
+    .footerIconos{display: flex;    
+        flex-direction: row;
+        justify-content: flex-start;
+        margin:1rem;}
+        .menu-footer{display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 1rem}
+.barraFooterSub {color:#8A8787;
     font-size: 10px;
     font-weight: 700;
     line-height: 11.72px;

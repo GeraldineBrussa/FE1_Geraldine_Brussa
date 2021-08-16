@@ -19,10 +19,18 @@
     <!-- Barra Superior -->
             <nav class="barraSuperior">
                 <h5 class="barraSuperior">Grandes ofertas en comederos</h5>
-                <ul>
-                    <li>Español</li>
-                    <li>ARG$</li>
-                </ul>
+                <section>
+                    <select name="idioma">
+                        <option value="español" checked>Español</option>
+                        <option value="ingles">Inglés</option>
+                        <option value="portugues">Portugués</option>
+                    </select>
+                    <select name="peso">
+                        <option value="ARG" checked>ARG$</option>
+                        <option value="USD">U$D</option>
+                        <option value="COP">COP$</option>
+                    </select>
+                </section>
             </nav>
         <!-- Logo cat&dog -->
             <img src="img/Logo-Cat&Dog.png" alt="Petshop Cat&Dog">
@@ -80,16 +88,18 @@
     <!-- Formularios -->
             <section>
                 <!-- Formulario de Contacto -->
-                <form action="#" method="POST" class="contactanos">
-                    <legend>Contáctanos</legend>
-                    <input id="name" type="text" placeholder="Nombre y Apellido">
-                    <input id="email" type="email"placeholder="Ingresá tu correo electrónico">
-                    <input id="tel" type="tel" placeholder="Teléfono">
-                    <p>
-                        <button value="reset" class="reset">Resetear</button>
-                        <button value="submit" class="enviar">Enviar</button>
-                    </p>
-                </form>
+                <fieldset>
+                    <form action="#" method="POST" class="contactanos">
+                        <legend>Contáctanos</legend>
+                        <input id="name" type="text" placeholder="Nombre y Apellido" tabindex="1" required>
+                        <input id="email" type="email"placeholder="Ingresá tu correo electrónico" tabindex="2" required>
+                        <input id="tel" type="tel" placeholder="Teléfono" tabindex="3">
+                        <p>
+                            <button value="reset" class="reset">Resetear</button>
+                            <button value="submit" class="enviar">Enviar</button>
+                        </p>
+                    </form>
+                </fieldset>
                 <!-- Formulario Newsletter -->
                 <form action="#" method="POST" class="newsletter">
                     <p>
@@ -97,7 +107,7 @@
                         <legend>Suscríbete para más novedades</legend>
                     </p>
                     <p>
-                        <input id="Nemail" type="email" placeholder="Ingresá tu correo electronico">
+                        <input id="Nemail" type="email" placeholder="Ingresá tu correo electronico"required>
                         <button value="submit" class="enviar">Suscribirme</button>
                     </p>
                 </form>
@@ -106,33 +116,32 @@
 <!-- Contenido para el pie de página -->
         <footer>
     <!-- Barra de footer -->
-            <nav class="barraFooter">
-                <img src="img/Logo-footer.png" class="logo-footer">
-                
-                <ul>
-                    <article class="menu-footer">
-                    <img src="img/icono-localidad.png">
-                    <li class="localidad">Localidad</li>
-                        <ul>
-                            <li class="barraFooterSub">Calle - Provincia</li>
-                        </ul>
-                    </article>
-                    <article class="menu-footer">
-                        <img src="img/Icono-tel.png">
-                        <li class="cel">Número de teléfono</li>
-                            <ul>
-                                <li class="barraFooterSub">15-111-111-111</li>
-                            </ul>
-                        </article>
-                        <article class="menu-footer">
-                        <img src="img/Icono-email.png">     
-                        <li class="correo">Correo Electrónico</li>
-                            <ul>
-                                <li class="barraFooterSub">Dirección de Correo</li>
-                            </ul>
-                        </article>
-                    </ul>
-            </nav>
+    <nav class="barraFooter">
+        <img src="img/Logo-footer.png" class="logo-footer">
+        <section>
+            <article class="footerIconos">
+                <img src="img/icono-localidad.png">
+                <article class="menu-footer">
+                    <h4>Localidad</h4>
+                    <h5 class="barraFooterSub">Calle - Provincia</h5>
+                </article>
+            </article>
+            <article class="footerIconos">
+                <img src="img/Icono-tel.png">
+                <article class="menu-footer">
+                    <h4>Número de teléfono</h4>
+                    <h5 class="barraFooterSub">15-111-111-111</h5>
+                </article>
+            </article>
+            <article class="footerIconos">
+                <img src="img/Icono-email.png">
+                <article class="menu-footer">
+                    <h4>Correo Electrónico</h4>
+                    <h5 class="barraFooterSub">Dirección de Correo</h5>
+                </article>
+            </article>
+        </section>
+    </nav>
     <!-- Derechos Reservados -->
             <h6>Todos los derechos reservados Front End</h6>
         </footer>
