@@ -1,0 +1,417 @@
+/* Configuración General de los Estilos de la Página */
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* Movil First*/
+/* Header - Logo - Barra de Navegación */
+header {
+    height: 90px;
+    width: 100%;
+    background-color: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.BarraNav {visibility: hidden;}
+
+/* Sección Descuentos */
+.descuentos {
+    height: 512px;
+    width: 100%;
+    background-image: url('../img/fondo1_movil.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .descuentos h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        text-align: center;
+        color: #ffffff;
+        margin: 1rem;
+    }
+    .descuentos h1 span {
+        color: #D01418;
+    }
+    .descuentos button{
+        height: 4rem;
+        width: 60vw;
+        background: #D01418;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: #F3F3F3;
+        border: none;
+        margin: 1rem;
+    }
+/* Sección Productos Destacados */
+h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #000000;
+    padding: 1.5rem 1rem 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.Pdestacados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+    .Pdestacados .producto {
+        height: 322px;
+        width: 65vw;
+        background: #FFFFFF;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1.5rem;
+        padding: 1.5rem 0 0 0;
+    }
+    .Pdestacados img {
+        align-self: center;
+    }
+    .Pdestacados h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        color: #000000;
+        padding-left: 1rem;
+    }
+    .Pdestacados h5 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        color: #000000;
+        padding-left: 1rem;
+    }
+    .Pdestacados p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.5rem;
+        line-height: 0.9rem;
+        color: #619D00;
+        padding-left: 1rem;
+    }
+/* Sección Productos Estrellas */
+.tituloPestrellas {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    color: #000000;
+    padding: 2rem 0rem 1rem;
+}
+.Pestrellas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+    .Pestrellas .banner{
+        height: 90px;
+        width: 67vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 0.5rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .Pestrellas .primero {
+        background-image: url('../img/banner 1.png');
+    }
+    .Pestrellas .segundo {
+        background-image: url('../img/banner2.png');
+    }
+    .Pestrellas h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        color: #F3F3F3;
+    }
+/* Footer - Logo - Barra de Navegación -Derechos Reservados */
+.footer {
+    background: #222222;
+    height: 191px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    .footer img {
+        margin: 1rem 0 1rem 0;
+    }
+    .navFooter {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        color: #F3F3F3;
+    }
+    .navFooter ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h6{
+        background-color: #C4C4C4;
+        height: 1.7rem;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #000000;
+        text-align: center;
+        padding: 0.5rem;
+    }
+/* Full Desktop */
+@media (min-width:1024px) {
+/* Header - Logo - Barra de Navegación */
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+    header {
+        height: 90px;
+        width: 100%;
+        background-color: #222222;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .BarraNav {visibility: visible;}
+    .BarraNav ul li a {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        color: #F3F3F3;
+        padding: 1rem;
+    }
+    .BarraNav ul {
+        list-style: none;
+        display: flex;
+        padding: 1rem;
+    }
+    #carrito {
+        padding:0 0 0 2.5rem;
+    }
+    header .MenuMovil {
+        display: none;
+    }
+/* Sección Descuentos */
+.descuentos {
+    height: 512px;
+    width: 100%;
+    background-image: url('../img/fondo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .descuentos h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        text-align: center;
+        color: #ffffff;
+        margin: 1rem;
+    }
+    .descuentos h1 span {
+        color: #D01418;
+    }
+    .descuentos button{
+        height: 4rem;
+        width: 15vw;
+        background: #D01418;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: #F3F3F3;
+        border: none;
+        margin: 1rem;
+    }
+/* Sección Productos Destacados */
+h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #000000;
+    padding: 3rem 0 1rem 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.Pdestacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0 4rem 0 4rem;
+}
+    .Pdestacados .producto {
+        height: 322px;
+        width: 20vw;
+        background: #FFFFFF;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1.5rem;
+        padding: 2rem 0 0 0 ;
+    }
+    .Pdestacados img {
+        align-self: center;
+    }
+    .Pdestacados h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        color: #000000;
+        padding-left: 1rem;
+    }
+    .Pdestacados h5 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        color: #000000;
+        padding-left: 1rem;
+    }
+    .Pdestacados p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.5rem;
+        line-height: 0.9rem;
+        color: #619D00;
+        padding-left: 1rem;
+    }
+/* Sección Productos Estrellas */
+.tituloPestrellas {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    color: #000000;
+    padding: 4rem 3rem 2rem;
+}
+.Pestrellas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+    .Pestrellas .banner{
+        height: 135px;
+        width: 30vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 0 5rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 0.5rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .Pestrellas .primero {
+        background-image: url('../img/banner 1.png');
+    }
+    .Pestrellas .segundo {
+        background-image: url('../img/banner2.png');
+    }
+    .Pestrellas h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        color: #F3F3F3;
+    }
+/* Footer - Logo - Barra de Navegación -Derechos Reservados */
+.footer {
+    background: #222222;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    .navFooter {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        color: #F3F3F3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem 0 5rem;
+        height: 261px;
+        width: 100%;
+    }
+    .navFooter ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navFooter article {
+        padding: 2rem 0 0 0;
+    }
+    h6{
+        background-color: #C4C4C4;
+        height: 1.7rem;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #000000;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+
+}
