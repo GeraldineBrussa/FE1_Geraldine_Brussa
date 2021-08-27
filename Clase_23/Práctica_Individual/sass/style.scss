@@ -1,0 +1,94 @@
+// import
+@import "_variables.scss";
+@import "_mixin.scss";
+// Configuración General de los estilos de la página
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    body {
+        font-family: $familia;
+        // Header
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            padding: 1rem;
+            .barraNav{
+                display: flex;
+            }
+                ul li {
+                    list-style: none;
+                    padding: 1rem;
+                }
+        }
+        .principal{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .contenido{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 4rem;
+                width: 100%;
+                height: 700px;
+                h2{
+                    @include h2;
+                    @include shadow
+                }
+                p{
+                    color: $color-primary;
+                }
+                button{
+                    @include button;
+                }
+            }
+        }
+        .acciones{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 5rem;
+            .caja{
+                height: 250px;
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                background-color: $bg-secondary;
+                padding: 1rem;
+                h3{
+                    @include h3;
+                }
+                h4 {
+                    box-shadow: inset 0 10px $color-shadow;
+                }
+            }
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            .copyright{
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+                h6{
+                    margin-left: 1rem;
+                }
+            }
+            .redes{
+                display:flex;
+                justify-content: flex-end;
+                align-items: center;
+                img {
+                    margin: 0 1rem 0 0;
+                    @include redes;
+                }
+            }
+        }
+    }
+}

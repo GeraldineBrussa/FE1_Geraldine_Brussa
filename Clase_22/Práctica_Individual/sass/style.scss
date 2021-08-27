@@ -1,0 +1,103 @@
+// Importación de Variables 
+$titulos-color: #005677;
+$titulos-family: 'Times New Roman';
+$titulos-fondo: #C4C4C4;
+$titulos-mayusculas: uppercase;
+// Configuración General de los estilos de la página 
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    // Header CV y foto 
+    .header-cv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #E6E6E6;
+        
+        img{
+            padding: 2rem 0;
+        }
+        h1 {
+            background-color: $titulos-fondo;
+            color: $titulos-color;
+            font-family: $titulos-family;
+            text-transform: $titulos-mayusculas;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 0.4rem;
+    }   
+    // Estilos de las cajas
+    }
+    .caja {
+        width: 100%;
+        
+        h2{
+            background-color: $titulos-fondo;
+            color: $titulos-color;
+            font-family: $titulos-family;
+            text-transform: $titulos-mayusculas;
+            width: 100%;
+            padding-left: 1rem;
+        }
+    }
+    // Datos Personales 
+    .personales {
+            padding-top: 8rem;
+            ul {
+            list-style: disc;
+            padding: 1rem;
+                li {
+                    margin: 1rem;
+                    font-style: italic;
+                }
+        }
+    }
+    // Formación Académica 
+    .academica {
+        ul {
+            padding: 1rem;
+            list-style: none;
+        }
+            li {
+                margin: 1rem 1rem 0;
+            }
+                .descripcion {
+                    margin:0;
+                    padding: 0 5rem;
+            }
+    }
+    // Experiencia Laboral 
+    .laboral{
+        ul{
+            padding: 1rem;
+            list-style: none;
+        }
+            li{
+                margin: 1rem 1rem 0;
+            }
+                .descripcion {
+                    margin:0;
+                    padding: 0 5rem;
+                }
+    }
+    // Footer número y redes 
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $titulos-color;
+        height: 37px;
+        width: 100%;
+        padding-left: 1rem;
+        margin-top: 7rem;
+        h3{
+            text-align:center;
+            color:#FFFFFF;
+        }
+        img {
+            margin-left: 1rem;
+        }
+    }
+
+}

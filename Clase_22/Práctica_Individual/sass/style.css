@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* .header-cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E6E6E6;
+}
+
+* .header-cv img {
+  padding: 2rem 0;
+}
+
+* .header-cv h1 {
+  background-color: #C4C4C4;
+  color: #005677;
+  font-family: "Times New Roman";
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+* .caja {
+  width: 100%;
+}
+
+* .caja h2 {
+  background-color: #C4C4C4;
+  color: #005677;
+  font-family: "Times New Roman";
+  text-transform: uppercase;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+* .personales {
+  padding-top: 8rem;
+}
+
+* .personales ul {
+  list-style: disc;
+  padding: 1rem;
+}
+
+* .personales ul li {
+  margin: 1rem;
+  font-style: italic;
+}
+
+* .academica ul {
+  padding: 1rem;
+  list-style: none;
+}
+
+* .academica li {
+  margin: 1rem 1rem 0;
+}
+
+* .academica .descripcion {
+  margin: 0;
+  padding: 0 5rem;
+}
+
+* .laboral ul {
+  padding: 1rem;
+  list-style: none;
+}
+
+* .laboral li {
+  margin: 1rem 1rem 0;
+}
+
+* .laboral .descripcion {
+  margin: 0;
+  padding: 0 5rem;
+}
+
+* .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #005677;
+  height: 37px;
+  width: 100%;
+  padding-left: 1rem;
+  margin-top: 7rem;
+}
+
+* .footer h3 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+* .footer img {
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
